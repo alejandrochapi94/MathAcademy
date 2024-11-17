@@ -911,7 +911,7 @@ section,
 }
 .hero .btn-get-started-2 {
   color: #fff;
-  background: #34c759;
+  background: var(--accent-color-2); /* Agrega una nueva variable de color */
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 16px;
@@ -921,6 +921,10 @@ section,
   border-radius: 4px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  --accent-color-2: #34c759; /* Agrega el valor del color */
 }
 
 .hero .btn-get-started:hover {
