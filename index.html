@@ -25,7 +25,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.v1.css" rel="stylesheet">
+  <link href="assets/css/boton.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: BizLand
@@ -36,7 +37,12 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page" onload="window.scrollTo(0, 0);">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://wa.me/+593967690826" class="float pulse" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
 
   <header id="header" class="header sticky-top">
 
@@ -84,9 +90,8 @@
             <h4>Ing. Alejandro Chapi</h4>
             <h2><span>DOCENTE UNIVERSITARIO</span></h2>
             
-            <div class="d-flex mt-2">
-              <a href="#features-services" class="btn-get-started me-3">Empezar recorrido</a>
-              <a href="https://wa.me/+593967690826" class="btn-get-started-2 me-3">Whatsapp</a>
+            <div class="d-flex mt-4">
+              <a href="javascript:void(0)" class="btn-get-started me-3" onclick="deslizarHaciaAbajo(); ">Empezar recorrido</a>
 
               <!--
                 <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -540,6 +545,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/abajo.js"></script>
 
 </body>
 
